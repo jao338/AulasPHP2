@@ -1,8 +1,15 @@
 <?php
 
-class Login1{
+class Login2{
     private $email;
     private $senha;
+    private $nome;
+
+    public function __construct($nome, $email, $senha){
+        $this->setNome($nome);
+        $this->setEmail($email);
+        $this->setSenha($senha);
+    }
 
     public function getEmail(){
         return $this->email;
@@ -23,8 +30,16 @@ class Login1{
         $this->senha = $s;
     }
 
+    public function getNome(){
+        return $this->nome;
+    }
+
+    public function setNome($n){
+        $this->nome = $n;
+    }
+
     public function Login(){
-        if($this->email == "teste@teste.com" AND $this->senha == "123456"){
+        if($this->email == "joaohenriquerc123@gmail.com" AND $this->senha == "123456"){
             echo "Login feito com sucesso!";
         }else{
             echo "Dados inválidos";
@@ -32,10 +47,7 @@ class Login1{
     }
 }
 
-$user = new Login1();
-
-$user->setEmail("teste@teste.com");
-$user->setSenha("123456");
+$user = new Login2("João Henrique dos Santos Pereira", "joaohenriquerc123@gmail.com", "123456");
 
 $user->Login();
 
