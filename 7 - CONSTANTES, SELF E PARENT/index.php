@@ -1,5 +1,8 @@
 <?php
 
+//  Use 'self' para referenciar uma constante da própria classe
+//  Use 'parent' para referenciar uma constante de uma superclasse
+
 class Pessoa{
 
     const nome = "Pessoa";

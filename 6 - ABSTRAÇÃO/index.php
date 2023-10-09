@@ -1,5 +1,7 @@
 <?php
 
+//  Uma classe abstrata é uma classe que contém pelo menos um método abstrato. Um método abstrato é um método declarado, mas sem nenhuma implementação.
+
 abstract class Banco{
 
     protected $saldo;

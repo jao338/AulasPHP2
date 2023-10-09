@@ -1,5 +1,7 @@
 <?php
 
+// Uma classe abstrata é instanciada uma única vez
+
 class Login{
 
     public static $user;
@@ -13,6 +15,7 @@ class Login{
     }
 }
 
+//  Para acessar seus métodos e atributos use a sintaxe abaixo.
 Login::$user = "admin";
 Login::verificaLogin();
 
