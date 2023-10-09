@@ -1,5 +1,7 @@
 <?php
 
+// Na agregação, uma classe precisa de outra para executar sua ação.
+
 class Produtos{
     public $nome;
     public $valor;
