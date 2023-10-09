@@ -9,7 +9,7 @@ class Login{
     }
 
     public function sairSitema(){
-        echo "Saindo...";
+        echo "<br>Saindo...";
     }
 }
 
